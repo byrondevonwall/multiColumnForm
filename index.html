@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Multi-Column Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" type='text/css'>
+    <link href="./assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+<!-- lato -->
+  </head>
+  <body>
+    <div class="grid">
+
+      <div class="col-1-3">
+        <span class="wrapper-firstName">
+          <p>FIRST NAME</p>
+          <label><input class="firstName" type="text" placeholder="Johnathan"></label>
+        </span>
+        <span class="wrapper-lastName">
+          <p>LAST NAME</p>
+          <label><input class="lastName" type="text" placeholder="Doe"></label>
+        </span>
+        <span class="wrapper-email">
+          <p>EMAIL ADDRESS</p>
+          <label><input class="email" type="text" placeholder="jon@doe.com"></label>
+        </span>
+        <span class="wrapper-country">
+          <p>COUNTRY</p>
+          <select name="country" class="country">
+            <option selected="selected" disabled="disabled">Choose a country</option>
+            <option>France</option>
+            <option>Italy</option>
+            <option>Portugal</option>
+          </select>
+        </span>
+        <span class="wrapper-bio">
+          <p>BIOGRAPHY</p>
+          <textarea name="BIOGRAPHY" class="bio"></textarea>
+        </span>
+      </div>
+
+      <div class="col-2-3">
+        <span class="wrapper-phone">
+          <p>PHONE NUMBER</p>
+          <label><input class="phone" type="text" placeholder="+351 999 999"></label>
+        </span>
+        <span class="wrapper-affiliations">
+          <p>AFFILIATIONS</p>
+          <textarea name="affiliations" class="affiliation" ></textarea>
+        </span>
+        <span class="wrapper-occupation">
+          <p>OCCUPATION</p>
+          <select name="occupation" class="occupation">
+            <option selected="selected" disabled="disabled">Choose an occupation</option>
+            <option>Web Designer</option>
+            <option>Web Developer</option>
+            <option>Hybrid</option>
+        </select>
+        </span>
+        <span class="wrapper-cat">
+          <p>CAT'S NAME</P>
+          <label><input class="catName" type="text" placeholder="Kitty"></label>
+        </span>
+        <span class="wrapper-gadget">
+          <p>FAVORITE GADGET</p>
+          <label><input class="gadget" type="text" placeholder="Annoy-a-tron"></label>
+        </span>
+      </div>
+
+      <div class="col-3-3">
+        <span class="wrapper-talent">
+        <p>TYPE OF TALENT</P>
+        <select name="talent" class="talent">
+          <option selected="selected" disabled="disabled">Choose a talent</option>
+          <option>Ninja silence</option>
+          <option>Sumo power</option>
+          <option>Samurai Precision</option>
+        </select>
+        </span>
+        <span class="wrapper-drink">
+          <p>FAVORITE DRINK</p>
+          <label><input class="drink" type="text" placeholder="Green Tea"></label>
+        </span>
+        <span class="wrapper-power">
+          <p>SPECIAL POWER</p>
+          <label><input class="power" type="text" placeholder='Anti-gravity'></label>
+        </span>
+        <span class="wrapper-weapon">
+          <p>WEAPON OF CHOICE</p>
+          <label><input class="weapon" type="text" placeholder="Lightsaber"></label>
+        </span>
+        <span class=wrapper-comments>
+          <p>COMMENTS</p>
+          <textarea name="comments" class="comment"></textarea>
+        </span>
+      </div>
+    </div>
+    <div class="submitWrap">
+      <input class="submit" type="submit" value="SEND YOUR DATA">
+      <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

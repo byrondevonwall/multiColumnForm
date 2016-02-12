@@ -1,0 +1,177 @@
+/**********************************************************************
+element selectors
+***********************************************************************/
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", "verdana", sans-serif;
+  color: white;
+  background-color: #47a3da
+  }
+
+p {
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+span {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+
+/*input box styling*/
+label {
+  padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+input{
+  width: 100%;
+  height: 10%;
+  background-color: #47a3da;
+  border: 3px solid white;
+  font-family: "lato", "verdana", sans-serif;
+  color: white;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/*txt area styling*/
+textarea {
+  background: #47a3da;
+  border: 3px solid white;
+  font-family: "lato", "verdana", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  width: 100%
+}
+
+/*select box styling*/
+select {
+    border: 1px solid #lightgray;
+    background-color: transparent;
+    font-family: "lato", "verdana", sans-serif;
+    color: white;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+/*placeholder styling*/
+::-webkit-input-placeholder {/*webkit*/
+  /*font-family: "lato", "verdana", sans-serif;*/
+  color: #10689a;
+  font-style: italic;
+  padding: 0 10px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+/**********************************************************************
+class selectors
+***********************************************************************/
+/*column styling*/
+.grid {
+  margin: 2.5%;
+}
+
+[class*='col-']{
+  float: left;
+}
+.col-1-3 {
+  width: 32%;
+  padding: 10px 30px;
+}
+.col-2-3 {
+  width: 32%;
+  padding: 10px 30px;
+}
+
+.col-3-3 {
+  width: 32%;
+  padding: 10px 30px;
+}
+
+[class*="wrapper-"]{
+  margin:2%;
+}
+
+.wrapper-gadget {
+  /*margin: 0 0 3% 0;*/
+}
+
+.bio {
+  min-height: 200px;
+}
+
+.affiliation {
+  min-height: 200px;
+}
+
+.comment {
+  min-height: 200px;
+}
+
+.submitWrap {
+  text-align: center;
+	padding-top: 40px;
+}
+
+.submit {
+  background: #10689a;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	/*border-radius: 2px;
+	letter-spacing: 1px;*/
+}
+
+.submit:hover {
+  background: #1478b1;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.grid:before,
+.grid:after {
+  content: " "; display: table;
+}
+.grid:after {
+	clear: both;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 70em) {
+	[class*='col-'] {
+		width: 50%;
+	}
+	[class*='col-']:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	[class*='col-'] {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+/**********************************************************************
+
+***********************************************************************/
