@@ -31,4 +31,20 @@ submit.addEventListener("click", function log(){
   console.log(power.value);
   console.log(weapon.value);
   console.log(comments.value);
+  firstName.value = "";
+  lastName.value = "";
+  email.value = "";
+  country.value = "";
+  bio.value = "";
+  phone.value = "";
+  affiliation.value = "";
+  occupation.value = "";
+  cat.value = "";
+  gadget.value = "";
+  talent.value = "";
+  drink.value = "";
+  power.value = "";
+  weapon.value = "";
+  comments.value = "";
+
 });
