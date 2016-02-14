@@ -44,6 +44,10 @@ input{
   line-height: 1.5;
 }
 
+input:focus {
+  border: 3px solid #10689a;
+}
+
 /*txt area styling*/
 textarea {
   background: #47a3da;
@@ -54,9 +58,13 @@ textarea {
   width: 100%;
 }
 
+textarea:focus {
+  border: 3px solid #10689a;
+}
+
 /*select box styling*/
 select {
-    border: 1px solid #lightgray;
+    border: 1px solid lightgray;
     background-color: transparent;
     font-family: "lato", "verdana", sans-serif;
     color: white;
